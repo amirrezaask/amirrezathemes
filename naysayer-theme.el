@@ -1,4 +1,4 @@
-;;; jblow-theme.el --- Theme copied from jonathan blow emacs theme  -*- lexical-binding: t; -*-
+;;; naysayer-theme.el --- Theme copied from jonathan blow emacs theme  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Amirreza Askarpour
 
@@ -26,7 +26,7 @@
 
 
 
-(deftheme jblow "Theme from Great Jonathan Blow")
+(deftheme naysayer "Theme from Great Jonathan Blow")
 
 (let ((background "#072626")
       (selection "#0000ff")
@@ -80,5 +80,5 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'jblow)
-;;; jblow-theme.el ends here
+(provide-theme 'naysayer)
+;;; naysayer-theme.el ends here
