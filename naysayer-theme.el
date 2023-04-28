@@ -47,7 +47,7 @@
       )
 
   (custom-theme-set-faces
-   'jblow
+   'naysayer
    
    `(default ((t (:foreground "#d3b58d" :background ,background))))
    `(cursor ((t (:background ,cursor))))
