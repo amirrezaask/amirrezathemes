@@ -1,6 +1,6 @@
-vim.g.colors_name = "jblow"
+vim.g.colors_name = "handmadehero"
 local colors = {
-  background = "#072626",
+  background = "#161616",
   foreground = "#d3b58d",
   selection = "#0000ff",
   keyword = "#d4d4d4",
