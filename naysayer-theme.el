@@ -26,9 +26,10 @@
 
 
 
-(deftheme naysayer "Theme from Great Jonathan Blow")
+(deftheme naysayer "Similar to Jon Blow theme")
 
-(let ((background "#072626")
+(let ((background "#042021")
+      (text "#d3b58d")
       (selection "#0000ff")
       (keyword "#d4d4d4")
       (comment "#118a1a")
@@ -36,7 +37,7 @@
       (variable "#c8d4ec")
       (warning "#504038")
       (constant "#7ad0c6")
-      (cursor "green")
+      (cursor "cyan")
       (mode-line "#d3b58d")
       (function "#ffffff")
       (macro "#8cde94")
@@ -49,7 +50,7 @@
   (custom-theme-set-faces
    'naysayer
    
-   `(default ((t (:foreground "#d3b58d" :background ,background))))
+   `(default ((t (:foreground ,text :background ,background))))
    `(cursor ((t (:background ,cursor))))
 
    `(font-lock-keyword-face           ((t (:foreground ,keyword))))
