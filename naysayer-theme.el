@@ -37,7 +37,7 @@
       (variable "#c8d4ec")
       (warning "#504038")
       (constant "#7ad0c6")
-      (cursor "cyan")
+      (cursor "green")
       (mode-line "#d3b58d")
       (function "#ffffff")
       (macro "#8cde94")
