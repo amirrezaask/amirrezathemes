@@ -1,3 +1,5 @@
+vim.g.colors_name = 'gruvbuddy'
+
 vim.api.nvim_set_hl(0, '@boolean', {   fg = "#de935f" })
 vim.api.nvim_set_hl(0, '@character', {   fg = "#cc6666" })
 vim.api.nvim_set_hl(0, '@character.special', {   fg = "#a3685a" })
@@ -941,3 +943,4 @@ vim.api.nvim_set_hl(0, 'vimnotfunc', {   fg = "#81a2be" })
 vim.api.nvim_set_hl(0, 'vimwikibold', {   fg = "#cc6666" })
 vim.api.nvim_set_hl(0, 'visuallinemode', {   bg = "#38556d" })
 vim.api.nvim_set_hl(0, 'visualmode', {   bg = "#38556d" })
+
