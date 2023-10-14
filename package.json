@@ -13,9 +13,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Amirreza Default Dark",
+        "label": "Amirreza VS Dark",
         "uiTheme": "vs-dark",
-        "path": "./vscode/DefaultDark.json"
+        "path": "./vscode/VSDark.json"
+      },
+      {
+        "label": "Amirreza Dark Modern",
+        "uiTheme": "vs-dark",
+        "path": "./vscode/DarkModern.json"
       },
       {
         "label": "Amirreza Naysayer",
