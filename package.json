@@ -9,6 +9,7 @@
   "categories": [
     "Themes"
   ],
+  "publisher": "amirrezaask",
   "repository": "https://github.com/amirrezaask/themes",
   "contributes": {
     "themes": [
