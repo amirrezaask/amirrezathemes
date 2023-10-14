@@ -1,0 +1,27 @@
+{
+  "name": "amirreza-theme-pack",
+  "displayName": "amirreza-theme-pack",
+  "description": "Personal Theme Pack",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": "https://github.com/amirrezaask/themes",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Amirreza Default Dark",
+        "uiTheme": "vs-dark",
+        "path": "./vscode/DefaultDark.json"
+      },
+      {
+        "label": "Amirreza Naysayer",
+        "uiTheme": "vs-dark",
+        "path": "./vscode/Naysayer.json"
+      }
+    ]
+  }
+}
