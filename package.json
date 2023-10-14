@@ -1,7 +1,7 @@
 {
-  "name": "amirreza-theme-pack",
-  "displayName": "amirreza-theme-pack",
-  "description": "Personal Theme Pack",
+  "name": "amirreza-theme",
+  "displayName": "amirreza-theme",
+  "description": "Amirreza Theme Pack",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.83.0"
