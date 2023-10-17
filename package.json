@@ -14,19 +14,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Amirreza VS Dark",
-        "uiTheme": "vs-dark",
-        "path": "./vscode/VSDark.json"
+        "label": "Amirreza Light Theme",
+        "uiTheme": "vs",
+        "path": "./vscode/Light.json"
       },
       {
-        "label": "Amirreza Dark Modern",
+        "label": "Amirreza Dark Theme",
         "uiTheme": "vs-dark",
-        "path": "./vscode/DarkModern.json"
+        "path": "./vscode/Dark.json"
       },
       {
         "label": "Amirreza Naysayer",
         "uiTheme": "vs-dark",
         "path": "./vscode/Naysayer.json"
+      },
+      {
+        "label": "Amirreza Rider Dark",
+        "uiTheme": "vs-dark",
+        "path": "./vscode/RiderDark.json"
       }
     ]
   }

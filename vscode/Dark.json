@@ -1,14 +1,12 @@
 {
-	"name": "DefaultDark",
+	"name": "Dark",
 	"colors": {
 		"editor.background": "#333333",
 		"panel.background": "#272727",
-		"statusBar.background": "#181818",
 		"statusBar.border": "#2B2B2B",
 		"statusBar.debuggingBackground": "#0078D4",
 		"statusBar.debuggingForeground": "#FFFFFF",
 		"statusBar.focusBorder": "#0078D4",
-		"statusBar.foreground": "#CCCCCC",
 		"statusBar.noFolderBackground": "#1F1F1F",
 		"statusBarItem.focusBorder": "#0078D4",
 		"statusBarItem.prominentBackground": "#6E768166",
@@ -36,7 +34,11 @@
 		"list.activeSelectionIconForeground": "#FFF",
 		"terminal.inactiveSelectionBackground": "#3A3D41",
 		"widget.border": "#303031",
-		"actionBar.toggledBackground": "#383a49"
+		"actionBar.toggledBackground": "#383a49",
+		"sideBar.foreground": "#dddddd",
+		"list.hoverBackground": "#91919175",
+		"statusBar.foreground": "#00000081",
+		"statusBar.background": "#6bb2ff"
 	},
 	"tokenColors": [
 		{
