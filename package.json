@@ -2,13 +2,14 @@
   "name": "amirreza-theme",
   "displayName": "amirreza-theme",
   "description": "Amirreza Theme Pack",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.83.0"
   },
   "categories": [
     "Themes"
   ],
+  "license": "MIT",
   "publisher": "amirrezaask",
   "repository": "https://github.com/amirrezaask/themes",
   "contributes": {
