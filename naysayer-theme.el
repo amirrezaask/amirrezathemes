@@ -38,7 +38,8 @@
       (warning "#504038")
       (constant "#7ad0c6")
       (cursor "green")
-      (mode-line "#d3b58d")
+      (mode-line-bg "#d3b58d")
+      (mode-line-fg "black")
       (function "#ffffff")
       (macro "#8cde94")
       (punctuation "#8cde94")
@@ -67,11 +68,11 @@
    `(font-lock-preprocessor-face      ((t (:foreground ,macro))))
    `(font-lock-warning-face           ((t (:foreground ,warning))))
 
-   `(mode-line ((t (:foreground "black" :background ,mode-line))))
+   `(mode-line ((t (:foreground ,mode-line-fg :background ,mode-line-bg :box (:color ,mode-line-fg)))))
+   `(mode-line-inactive ((t (:foreground ,mode-line-fg :background ,mode-line-bg))))
    `(region ((t (:background ,selection))))
    `(hl-line ((t :background ,hl-line)))
    `(highlight ((t :foreground nil :background ,selection)))
-   `(persp-selected-face ((t :foreground "#ffffff")))
    )
   )
 
