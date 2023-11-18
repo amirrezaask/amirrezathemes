@@ -28,7 +28,7 @@
 
 (deftheme naysayer "Similar to Jon Blow theme")
 
-(let ((background "#042021")
+(let ((background "#062329")
       (text "#d3b58d")
       (selection "#0000ff")
       (keyword "#d4d4d4")
@@ -69,7 +69,7 @@
    `(font-lock-warning-face           ((t (:foreground ,warning))))
 
    `(mode-line ((t (:foreground ,mode-line-fg :background ,mode-line-bg :box (:color ,mode-line-fg)))))
-   `(mode-line-inactive ((t (:foreground ,mode-line-fg :background ,mode-line-bg))))
+   `(mode-line-inactive ((t (:foreground ,mode-line-fg :background "white"))))
    `(region ((t (:background ,selection))))
    `(hl-line ((t :background ,hl-line)))
    `(highlight ((t :foreground nil :background ,selection)))
