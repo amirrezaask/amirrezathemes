@@ -1,4 +1,4 @@
-;;; naysayer-theme.el --- Theme copied from jonathan blow emacs theme  -*- lexical-binding: t; -*-
+;;; jonathan-blow-theme.el --- Theme copied from jonathan blow emacs theme  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Amirreza Askarpour
 
@@ -26,7 +26,7 @@
 
 
 
-(deftheme naysayer "Similar to Jon Blow theme")
+(deftheme jonathan-blow "Similar to Jon Blow theme")
 
 (let ((background "#062329")
       (text "#d3b58d")
@@ -49,7 +49,7 @@
       )
 
   (custom-theme-set-faces
-   'naysayer
+   'jonathan-blow
    
    `(default ((t (:foreground ,text :background ,background))))
    `(cursor ((t (:background ,cursor))))
@@ -82,5 +82,5 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'naysayer)
-;;; naysayer-theme.el ends here
+(provide-theme 'jonathan-blow)
+;;; jonathan-blow-theme.el ends here
