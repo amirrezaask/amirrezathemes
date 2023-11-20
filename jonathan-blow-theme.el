@@ -45,6 +45,10 @@
  `(mode-line ((t (:foreground "black" :background "#d3b58d"))))
  `(mode-line-inactive ((t (:foreground "black" :background "white"))))
  `(vertico-current ((t (:background "blue3"))))
+ `(error ((t (:background "black" :foreground "red"))))
+ `(flymake-error ((t (:background "black" :foreground "red"))))
+ `(flymake-warning ((t (:foreground "DarkOrange"))))
+ `(flymake-note ((t (:foreground "DarkOrange"))))
  )
 
 ;;;###autoload
