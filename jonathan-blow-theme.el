@@ -27,55 +27,25 @@
 
 
 (deftheme jonathan-blow "Similar to Jon Blow theme")
-
-(let ((background "#062329")
-      (text "#d3b58d")
-      (selection "#0000ff")
-      (keyword "#d4d4d4")
-      (comment "#118a1a")
-      (string "#2ec09c")
-      (variable "#c8d4ec")
-      (warning "#504038")
-      (constant "#7ad0c6")
-      (cursor "green")
-      (mode-line-bg "#d3b58d")
-      (mode-line-fg "black")
-      (function "#ffffff")
-      (macro "#8cde94")
-      (punctuation "#8cde94")
-      (hl-line "#084040")
-      (builtin "#ffffff")
-
-      )
-
-  (custom-theme-set-faces
-   'jonathan-blow
-   
-   `(default ((t (:foreground ,text :background ,background))))
-   `(cursor ((t (:background ,cursor))))
-
-   `(font-lock-keyword-face           ((t (:foreground ,keyword))))
-   `(font-lock-type-face              ((t (:foreground ,punctuation))))
-   `(font-lock-constant-face          ((t (:foreground ,constant))))
-   `(font-lock-variable-name-face     ((t (:foreground ,variable))))
-   `(font-lock-builtin-face           ((t (:foreground ,builtin))))
-   `(font-lock-string-face            ((t (:foreground ,string))))
-   `(font-lock-comment-face           ((t (:foreground ,comment))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,comment))))
-   `(font-lock-doc-face               ((t (:foreground ,comment))))
-   `(font-lock-function-name-face     ((t (:foreground ,function))))
-   `(font-lock-doc-string-face        ((t (:foreground ,string))))
-   `(font-lock-preprocessor-face      ((t (:foreground ,macro))))
-   `(font-lock-warning-face           ((t (:foreground ,warning))))
-
-   `(mode-line ((t (:foreground ,mode-line-fg :background ,mode-line-bg :box (:color ,mode-line-fg)))))
-   `(mode-line-inactive ((t (:foreground ,mode-line-fg :background "white"))))
-   `(region ((t (:background ,selection))))
-   `(hl-line ((t :background ,hl-line)))
-   `(highlight ((t :foreground nil :background ,selection)))
-   )
-  )
-
+(custom-set-faces
+ `(default ((t (:foreground "#d3b58d" :background "#062329"))))
+ `(cursor ((t (:background "green"))))
+ `(font-lock-keyword-face           ((t (:foreground "#d4d4d4"))))
+ `(font-lock-type-face              ((t (:foreground "#8cde94"))))
+ `(font-lock-constant-face          ((t (:foreground "#7ad0c6"))))
+ `(font-lock-variable-name-face     ((t (:foreground "#c8d4ec"))))
+ `(font-lock-builtin-face           ((t (:foreground "white"))))
+ `(font-lock-string-face            ((t (:foreground "#2ec09c"))))
+ `(font-lock-comment-face           ((t (:foreground "#118a1a"))))
+ `(font-lock-comment-delimiter-face ((t (:foreground "#118a1a"))))
+ `(font-lock-doc-face               ((t (:foreground "#118a1a"))))
+ `(font-lock-function-name-face     ((t (:foreground "white"))))
+ `(font-lock-doc-string-face        ((t (:foreground "#2ec09c"))))
+ `(font-lock-warning-face           ((t (:foreground "yellow"))))
+ `(mode-line ((t (:foreground "black" :background "#d3b58d"))))
+ `(mode-line-inactive ((t (:foreground "black" :background "white"))))
+ `(vertico-current ((t (:background "blue3"))))
+ )
 
 ;;;###autoload
 (when load-file-name
