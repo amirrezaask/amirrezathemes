@@ -28,7 +28,7 @@
 
 (deftheme jonathan-blow "Similar to Jon Blow theme")
 (custom-theme-set-faces
- jonathan-blow
+ 'jonathan-blow
  `(default ((t (:foreground "#d3b58d" :background "#062329"))))
  `(cursor ((t (:background "green"))))
  `(font-lock-keyword-face           ((t (:foreground "#d4d4d4"))))
