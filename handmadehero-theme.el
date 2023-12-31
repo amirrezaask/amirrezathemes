@@ -29,7 +29,7 @@
 (deftheme handmadehero "Theme from handmade series")
 
 (let ((background "#161616")
-      (highlight "midnight blue")
+      (highlight "#2e2d2d")
       (region "midnight blue")
       (text "burlywood3")
       (keyword "DarkGoldenrod3")
