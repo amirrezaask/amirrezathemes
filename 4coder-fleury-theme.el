@@ -27,7 +27,7 @@
 (deftheme 4coder-fleury "Theme from 4coder fleury")
 
 (let ((background "#020202")
-      (highlight "#303040")
+      (highlight "#2f2f37")
       (region "midnight blue")
       (text "#b99468")
       (keyword "#f0c674")
@@ -36,7 +36,7 @@
       (variable "#b99468")
       (warning "#504038")
       (constant "#6b8e23")
-      (cursor "green")
+      (cursor "#EE7700")
       (function "#cc5735")
       (macro "#8cde94")
       (type "#d8a51d")
