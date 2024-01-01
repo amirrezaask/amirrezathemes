@@ -71,6 +71,8 @@
    `(region ((t (:background ,region))))
    `(hl-line ((t :background ,highlight)))
    `(highlight ((t :foreground nil :background ,region)))
+   `(mode-line ((t (:foreground "#cb9401" :background "#1f1f27"))))
+   `(mode-line-inactive ((t (:foreground "#cb9401" :background "#1f1f27"))))
    )
   )
 
