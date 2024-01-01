@@ -1,8 +1,4 @@
 ;; Copyright (C) 2022  Amirreza Askarpour
-
-;; Author: Amirreza Askarpour <amirreza@amirrezas-MacBook-Pro.local>
-;; Keywords: lisp
-
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
@@ -22,13 +18,11 @@
 
 ;;; Code:
 
-
-
 (deftheme 4coder-fleury "Theme from 4coder fleury")
 
 (let ((background "#020202")
-      (highlight "#2f2f37")
-      (region "midnight blue")
+      (highlight "#171616")
+      (region "#2f2f37")
       (text "#b99468")
       (keyword "#f0c674")
       (comment "#666666")
@@ -73,6 +67,7 @@
    `(highlight ((t :foreground nil :background ,region)))
    `(mode-line ((t (:foreground "#cb9401" :background "#1f1f27"))))
    `(mode-line-inactive ((t (:foreground "#cb9401" :background "#1f1f27"))))
+   `(minibuffer-prompt ((t (:foreground ,text) :bold t)))
    )
   )
 
