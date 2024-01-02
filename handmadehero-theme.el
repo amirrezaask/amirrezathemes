@@ -1,8 +1,8 @@
-;;; jblow-theme.el --- Theme copied from jonathan blow emacs theme  -*- lexical-binding: t; -*-
+;;; handmadehero-theme.el --- Theme copied from handmadehero emacs theme  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Amirreza Askarpour
 
-;; Author: Amirreza Askarpour <amirreza@amirrezas-MacBook-Pro.local>
+;; Author: Amirreza Askarpour <raskarpour@gmail.com>
 ;; Keywords: lisp
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -26,53 +26,33 @@
 
 
 
-(deftheme handmadehero "Theme from handmade series")
+(deftheme jonathan-blow "Similar to Jon Blow theme")
+(custom-theme-set-faces
+ 'jonathan-blow
+ `(default ((t (:foreground "#d3b58d" :background "#072626"))))
+ `(cursor ((t (:background "lightgreen"))))
+ `(font-lock-keyword-face           ((t (:foreground "#d4d4d4"))))
+ `(font-lock-type-face              ((t (:foreground "#8cde94"))))
+ `(font-lock-constant-face          ((t (:foreground "#7ad0c6"))))
+ `(font-lock-variable-name-face     ((t (:foreground "#c8d4ec"))))
+ `(font-lock-builtin-face           ((t (:foreground "white"))))
+ `(font-lock-string-face            ((t (:foreground "#0fdfaf"))))
+ `(font-lock-comment-face           ((t (:foreground "#3fdf1f"))))
+ `(font-lock-comment-delimiter-face ((t (:foreground "#3fdf1f"))))
+ `(font-lock-doc-face               ((t (:foreground "#3fdf1f"))))
+ `(font-lock-function-name-face     ((t (:foreground "white"))))
+ `(font-lock-doc-string-face        ((t (:foreground "#3fdf1f"))))
+ `(font-lock-warning-face           ((t (:foreground "yellow"))))
+ `(mode-line ((t (:foreground "black" :background "#d3b58d"))))
+ `(mode-line-inactive ((t (:foreground "black" :background "white"))))
+ `(hl-line ((t (:foreground "#d3b58d" :background "#0b4040"))))
 
-(let ((background "#161616")
-      (highlight "#2e2d2d")
-      (region "midnight blue")
-      (text "burlywood3")
-      (keyword "DarkGoldenrod3")
-      (comment "gray50")
-      (string "olive drab")
-      (variable "burlywood3")
-      (warning "#504038")
-      (constant "olive drab")
-      (cursor "green")
-      (function "burlywood3")
-      (macro "#8cde94")
-      (punctuation "burlywood3")
-      (builtin "#DAB98F"))
-
-  (custom-theme-set-faces
-   'handmadehero
-   
-   `(default ((t (:foreground ,text :background ,background))))
-   `(cursor ((t (:background ,cursor))))
-   `(font-lock-keyword-face           ((t (:foreground ,keyword))))
-   `(font-lock-type-face              ((t (:foreground ,punctuation))))
-   `(font-lock-constant-face          ((t (:foreground ,constant))))
-   `(font-lock-variable-name-face     ((t (:foreground ,variable))))
-   `(font-lock-builtin-face           ((t (:foreground ,builtin))))
-   `(font-lock-string-face            ((t (:foreground ,string))))
-   `(font-lock-comment-face           ((t (:foreground ,comment))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,comment))))
-   `(font-lock-doc-face               ((t (:foreground ,comment))))
-   `(font-lock-function-name-face     ((t (:foreground ,function))))
-   `(font-lock-doc-string-face        ((t (:foreground ,string))))
-   `(font-lock-preprocessor-face      ((t (:foreground ,macro))))
-   `(font-lock-warning-face           ((t (:foreground ,warning))))
-   `(region ((t (:background ,region))))
-   `(hl-line ((t :background ,highlight)))
-   `(highlight ((t :foreground nil :background ,region)))
-   )
-  )
-
+ )
 
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'handmadehero)
-;;; jblow-theme.el ends here
+(provide-theme 'jonathan-blow)
+;;; jonathan-blow-theme.el ends here
