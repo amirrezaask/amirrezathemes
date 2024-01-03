@@ -68,10 +68,11 @@
    `(mode-line ((t (:foreground "#cb9401" :background "#1f1f27"))))
    `(mode-line-inactive ((t (:foreground "#cb9401" :background "#1f1f27"))))
    `(minibuffer-prompt ((t (:foreground ,text) :bold t)))
+   `(show-paren-match ((t (:background "#e0741b" :foreground "#000000"))))
    )
   )
 
-
+;; #e0741b
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
