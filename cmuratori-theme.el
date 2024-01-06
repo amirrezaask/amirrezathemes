@@ -18,21 +18,21 @@
 
 ;;; Code:
 
-(deftheme 4coder-fleury "Theme from 4coder fleury")
+(deftheme cmuratori "Theme from 4coder setup of cmuratori")
 
-(let ((background "#020202")
+(let ((background "#0C0C0C")
       (highlight "#171616")
       (region "#2f2f37")
-      (text "#b99468")
+      (text "#a08563")
       (keyword "#f0c674")
-      (comment "#666666")
-      (string "#ffa900")
+      (comment "#686868")
+      (string "#6b8e23")
       (variable "#b99468")
       (warning "#504038")
       (constant "#6b8e23")
       (cursor "#EE7700")
       (function "#cc5735")
-      (macro "#8cde94")
+      (macro "#dab98f")
       (type "#d8a51d")
       (operator "#907553")
       (punctuation "#907553") ;; 
@@ -41,7 +41,7 @@
       (builtin "#DAB98F"))
 
   (custom-theme-set-faces
-   '4coder-fleury
+   'cmuratori
    
    `(default ((t (:foreground ,text :background ,background))))
    `(cursor ((t (:background ,cursor))))
@@ -78,4 +78,4 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme '4coder-fleury)
+(provide-theme 'cmuratori)
