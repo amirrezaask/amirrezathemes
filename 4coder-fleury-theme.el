@@ -19,6 +19,7 @@
 ;;; Code:
 
 (deftheme 4coder-fleury "Theme from 4coder setup of ryan fleury")
+
 (global-hl-line-mode +1)
 (custom-theme-set-faces
  '4coder-fleury
@@ -56,4 +57,4 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme '4coder-fluery)
+(provide-theme '4coder-fleury)
