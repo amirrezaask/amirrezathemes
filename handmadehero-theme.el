@@ -1,5 +1,3 @@
-;;; handmadehero-theme.el --- Theme copied from handmadehero emacs theme  -*- lexical-binding: t; -*-
-
 ;; Copyright (C) 2022  Amirreza Askarpour
 
 ;; Author: Amirreza Askarpour <raskarpour@gmail.com>
@@ -26,33 +24,37 @@
 
 
 
-(deftheme jonathan-blow "Similar to Jon Blow theme")
-(custom-theme-set-faces
- 'jonathan-blow
- `(default ((t (:foreground "#d3b58d" :background "#072626"))))
- `(cursor ((t (:background "lightgreen"))))
- `(font-lock-keyword-face           ((t (:foreground "#d4d4d4"))))
- `(font-lock-type-face              ((t (:foreground "#8cde94"))))
- `(font-lock-constant-face          ((t (:foreground "#7ad0c6"))))
- `(font-lock-variable-name-face     ((t (:foreground "#c8d4ec"))))
- `(font-lock-builtin-face           ((t (:foreground "white"))))
- `(font-lock-string-face            ((t (:foreground "#0fdfaf"))))
- `(font-lock-comment-face           ((t (:foreground "#3fdf1f"))))
- `(font-lock-comment-delimiter-face ((t (:foreground "#3fdf1f"))))
- `(font-lock-doc-face               ((t (:foreground "#3fdf1f"))))
- `(font-lock-function-name-face     ((t (:foreground "white"))))
- `(font-lock-doc-string-face        ((t (:foreground "#3fdf1f"))))
- `(font-lock-warning-face           ((t (:foreground "yellow"))))
- `(mode-line ((t (:foreground "black" :background "#d3b58d"))))
- `(mode-line-inactive ((t (:foreground "black" :background "white"))))
- `(hl-line ((t (:foreground "#d3b58d" :background "#0b4040"))))
+(deftheme handmadehero "Theme from popular handmadehero.")
 
- )
+(global-hl-line-mode +1)
+(custom-theme-set-faces
+ 'handmadehero
+ `(default                          ((t (:foreground "#cdaa7d" :background "#161616"))))
+ `(cursor                           ((t (:background "green"))))
+ `(font-lock-keyword-face           ((t (:foreground "DarkGoldenrod3"))))
+ `(font-lock-type-face              ((t (:foreground "burlywood3"))))
+ `(font-lock-constant-face          ((t (:foreground "#olive drab"))))
+ `(font-lock-variable-name-face     ((t (:foreground "burlywood3"))))
+ `(font-lock-builtin-face           ((t (:foreground "#DAB98F"))))
+ `(font-lock-string-face            ((t (:foreground "olive drab"))))
+ `(font-lock-comment-face           ((t (:foreground "gray50"))))
+ `(font-lock-comment-delimiter-face ((t (:foreground "gray50"))))
+ `(font-lock-doc-face               ((t (:foreground "gray50"))))
+ `(font-lock-function-name-face     ((t (:foreground "burlywood3"))))
+ `(font-lock-doc-string-face        ((t (:foreground "olive drab"))))
+ `(font-lock-preprocessor-face      ((t (:foreground "#8cde94"))))
+ `(font-lock-warning-face           ((t (:foreground "#504038"))))
+ `(region                           ((t (:background "medium blue"))))
+ `(hl-line                          ((t (:background "midnight blue"))))
+ `(vertico-current                  ((t (:inherit hl-line))))
+ `(mode-line                        ((t (:background "#ffffff" :foreground "#000000"))))
+ `(mode-line-inactive               ((t (:background "gray20" :foreground "#ffffff"))))
+ `(show-paren-match                 ((t (:background "burlywood3" :foreground "black"))))
+ `(highlight                        ((t (:foreground nil :background "medium blue"))))))
 
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'jonathan-blow)
-;;; jonathan-blow-theme.el ends here
+(provide-theme 'handmadehero)

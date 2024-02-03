@@ -1,5 +1,3 @@
-;;; jonathan-blow-theme.el --- Theme copied from jonathan blow emacs theme  -*- lexical-binding: t; -*-
-
 ;; Copyright (C) 2022  Amirreza Askarpour
 
 ;; Author: Amirreza Askarpour <amirreza@amirrezas-MacBook-Pro.local>
@@ -26,36 +24,35 @@
 
 
 
-(deftheme jonathan-blow "Similar to Jon Blow theme")
+(deftheme brownaysayer "Browm theme inspired by Jonathan Blow (naysayer)")
+(global-hl-line-mode -1)
 (custom-theme-set-faces
- 'jonathan-blow
- `(default ((t (:foreground "#d3b58d" :background "#072626"))))
- `(cursor ((t (:background "lightgreen"))))
+ 'brownaysayer
+ `(default                          ((t (:foreground "#debe95" :background "#161616"))))
+ `(hl-line                          ((t (:background "#252525"))))
+ `(vertico-current                  ((t (:inherit hl-line))))
+ `(region                           ((t (:background  "medium blue"))))
+ `(cursor                           ((t (:background "green"))))
  `(font-lock-keyword-face           ((t (:foreground "#d4d4d4"))))
  `(font-lock-type-face              ((t (:foreground "#8cde94"))))
  `(font-lock-constant-face          ((t (:foreground "#7ad0c6"))))
  `(font-lock-variable-name-face     ((t (:foreground "#c8d4ec"))))
  `(font-lock-builtin-face           ((t (:foreground "white"))))
- `(font-lock-string-face            ((t (:foreground "#0fdfaf"))))
+ `(font-lock-string-face            ((t (:foreground "gray70"))))
  `(font-lock-comment-face           ((t (:foreground "#3fdf1f"))))
  `(font-lock-comment-delimiter-face ((t (:foreground "#3fdf1f"))))
  `(font-lock-doc-face               ((t (:foreground "#3fdf1f"))))
  `(font-lock-function-name-face     ((t (:foreground "white"))))
  `(font-lock-doc-string-face        ((t (:foreground "#3fdf1f"))))
  `(font-lock-warning-face           ((t (:foreground "yellow"))))
- `(mode-line ((t (:foreground "black" :background "#d3b58d"))))
- `(mode-line-inactive ((t (:foreground "black" :background "white"))))
- `(vertico-current ((t (:background "blue3"))))
- `(error ((t (:background "black" :foreground "red"))))
- `(flymake-error ((t (:background "black" :foreground "red"))))
- `(flymake-warning ((t (:foreground "DarkOrange"))))
- `(flymake-note ((t (:foreground "DarkOrange"))))
- )
+ `(font-lock-note-face              ((t (:foreground "khaki2" ))))
+ `(mode-line                        ((t (:foreground "black" :background "#d3b58d"))))
+ `(mode-line-inactive               ((t (:background "gray20" :foreground "#ffffff"))))
+ `(show-paren-match                 ((t (:background "mediumseagreen"))))))
 
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'jonathan-blow)
-;;; jonathan-blow-theme.el ends here
+(provide-theme 'brownaysayer)
