@@ -48,7 +48,7 @@
  `(font-lock-note-face              ((t (:foreground "khaki2" ))))
  `(mode-line                        ((t (:foreground "black" :background "#d3b58d"))))
  `(mode-line-inactive               ((t (:background "gray20" :foreground "#ffffff"))))
- `(show-paren-match                 ((t (:background "mediumseagreen"))))))
+ `(show-paren-match                 ((t (:background "mediumseagreen")))))
 
 ;;;###autoload
 (when load-file-name

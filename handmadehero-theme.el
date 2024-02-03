@@ -50,7 +50,7 @@
  `(mode-line                        ((t (:background "#ffffff" :foreground "#000000"))))
  `(mode-line-inactive               ((t (:background "gray20" :foreground "#ffffff"))))
  `(show-paren-match                 ((t (:background "burlywood3" :foreground "black"))))
- `(highlight                        ((t (:foreground nil :background "medium blue"))))))
+ `(highlight                        ((t (:foreground nil :background "medium blue")))))
 
 ;;;###autoload
 (when load-file-name
