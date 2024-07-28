@@ -1,30 +1,9 @@
-;; Copyright (C) 2022  Amirreza Askarpour
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
+(deftheme 4coder-fleury "Theme from 4coder custom version from Ryan Fleury.")
 
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-;;; Commentary:
-
-;; 
-
-;;; Code:
-
-(deftheme 4coder-fleury "Theme from 4coder setup of ryan fleury")
-
-(global-hl-line-mode +1)
 (custom-theme-set-faces
  '4coder-fleury
  `(default                          ((t (:foreground "#a08563" :background "#0c0c0c"))))
- `(cursor                           ((t (:background "#EE7700"))))
+ `(cursor                           ((t (:background "green"))))
  `(font-lock-keyword-face           ((t (:foreground "#f0c674"))))
  `(font-lock-operator-face          ((t (:foreground "#907553"))))
  `(font-lock-punctuation-face       ((t (:foreground "#907553"))))
@@ -51,10 +30,6 @@
  `(minibuffer-prompt                ((t (:foreground "#a08563") :bold t)))
  `(show-paren-match                 ((t (:background "#e0741b" :foreground "#000000")))))
 
+(global-hl-line-mode +1)
+(setq-default cursor-type 'bar)
 
-;;;###autoload
-(when load-file-name
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
-
-(provide-theme '4coder-fleury)
